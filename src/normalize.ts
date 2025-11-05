@@ -12,8 +12,6 @@ export function normalizeTurkish(text: string): string {
   if (!text || typeof text !== "string") {
     return "";
   }
-
-  // Türkçe karakter mapping
   const turkishMap: Record<string, string> = {
     İ: "I",
     ı: "i",
@@ -30,13 +28,12 @@ export function normalizeTurkish(text: string): string {
   };
 
   let normalized = text;
-
-  normalized = normalized.normalize("NFD");
-
   for (const [turkish, latin] of Object.entries(turkishMap)) {
     normalized = normalized.replace(new RegExp(turkish, "g"), latin);
   }
 
+  normalized = normalized.normalize("NFD");
+  normalized = normalized.replace(/[\u0300-\u036f]/g, "");
   normalized = normalized.normalize("NFC");
 
   return normalized;
@@ -87,5 +84,5 @@ export function normalizeTurkishLowercase(text: string): string {
     return "";
   }
 
-  return toTurkishLowerCase(normalizeTurkish(text));
+  return normalizeTurkish(text).toLowerCase();
 }
