@@ -1,15 +1,5 @@
 import { normalizeTurkishLowercase } from "./normalize";
 
-/**
- * Türkçe karakterleri destekleyen slug/URL oluşturma fonksiyonu
- * @param text - Slug'a çevrilecek metin
- * @param options - Slug oluşturma seçenekleri
- * @returns URL-safe slug string
- *
- * @example
- * slugify('İstanbul Şişli') // 'istanbul-sisli'
- * slugify('Çankaya/Ümraniye', { separator: '_' }) // 'cankaya_umraniye'
- */
 export function slugify(
   text: string,
   options: {

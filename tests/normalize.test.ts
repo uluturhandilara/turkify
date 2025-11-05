@@ -55,7 +55,8 @@ describe("normalizeTurkish", () => {
 describe("toTurkishLowerCase", () => {
   it("Türkçe locale ile lowercase yapmalı", () => {
     expect(toTurkishLowerCase("İSTANBUL")).toBe("istanbul");
-    expect(toTurkishLowerCase("İ")).toBe("ı");
+    expect(toTurkishLowerCase("İ")).toBe("i");
+    expect(toTurkishLowerCase("I")).toBe("ı");
     expect(toTurkishLowerCase("ŞİŞLİ")).toBe("şişli");
     expect(toTurkishLowerCase("ÇANKAYA")).toBe("çankaya");
   });
