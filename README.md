@@ -1,5 +1,7 @@
 # Turkify 🇹🇷
 
+<img width="1348" height="482" alt="carbon" src="https://github.com/user-attachments/assets/285a0ffa-878f-4e1a-bb9c-fa347207ccfe" />
+
 Türkçe karakter normalizasyon paketi - SEO ve URL'ler için
 
 ## Özellikler
