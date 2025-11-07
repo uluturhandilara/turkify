@@ -1,9 +1,3 @@
-/**
- * Turkify - Türkçe karakter normalizasyon paketi
- *
- * SEO ve URL'ler için Türkçe karakter normalizasyon araçları
- */
-
 import {
   normalizeTurkish,
   toTurkishLowerCase,
