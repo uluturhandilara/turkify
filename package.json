@@ -1,6 +1,6 @@
 {
   "name": "turkify",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Türkçe karakter normalizasyon paketi - SEO ve URL'ler için",
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
